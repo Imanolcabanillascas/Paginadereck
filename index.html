@@ -124,7 +124,7 @@
     <img src="/img/piso.png" alt="Franja decorativa" class="w-full rounded-b-xl">
   </div>
 </section>
-<!-- Sección Collage de Películas -->
+
 <!-- Sección Collage de Películas tipo Pinterest con enlaces a WhatsApp -->
 <section class="bg-white py-10 px-6">
   <div class="max-w-6xl mx-auto">
@@ -202,28 +202,107 @@
 <!-- Script Tabs -->
 
 
+<!-- Series -->
+<section id="series" class="bg-white py-16 px-6">
+  <h2 class="text-3xl font-bold text-center mb-10">📺 Series</h2>
+  <div class="grid gap-8 md:grid-cols-3">
+    
+    <!-- Card Serie Netflix -->
+    <div class="card relative shadow-lg overflow-hidden cursor-pointer group">
+      <img src="https://picsum.photos/400/250?random=1" class="w-full h-full object-cover" alt="Serie X">
 
-
-  <!-- Productos -->
-  <section id="productos" class="bg-white py-20 px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">Series y Películas</h2>
-    <div class="grid gap-8 md:grid-cols-2">
-      <!-- Card Producto -->
-      <div class="bg-gray-100 p-6 rounded-2xl shadow-lg text-center">
-        <img src="https://picsum.photos/300/200?random=4" class="rounded-lg mb-4 mx-auto" alt="Serie X">
-        <h3 class="text-xl font-semibold mb-2">Serie X</h3>
-        <p class="text-gray-600 mb-4">Costo: $9.99 | Promoción: 2x1 | Netflix</p>
-        <a href="https://wa.me/51999999999" target="_blank" class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600">WhatsApp</a>
+      <!-- Plataforma -->
+      <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between px-4 py-3">
+        <span class="font-medium flex-1 text-right">Netflix</span>
       </div>
-      <!-- Otro producto -->
-      <div class="bg-gray-100 p-6 rounded-2xl shadow-lg text-center">
-        <img src="https://picsum.photos/300/200?random=5" class="rounded-lg mb-4 mx-auto" alt="Película Y">
-        <h3 class="text-xl font-semibold mb-2">Película Y</h3>
-        <p class="text-gray-600 mb-4">Costo: $14.99 | Promoción: 3x2 | Disney+</p>
-        <a href="https://wa.me/51999999999" target="_blank" class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600">WhatsApp</a>
+
+      <!-- Resumen -->
+      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
+        <p class="text-sm">Una serie llena de acción y misterio que no podrás dejar de ver.</p>
       </div>
     </div>
-  </section>
+
+    <!-- Card Serie Disney+ -->
+    <div class="card relative shadow-lg overflow-hidden cursor-pointer group">
+      <img src="https://picsum.photos/400/250?random=2" class="w-full h-full object-cover" alt="Serie Y">
+
+      <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between px-4 py-3">
+        <span class="font-medium flex-1 text-right">Disney+</span>
+      </div>
+
+      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
+        <p class="text-sm">Aventuras mágicas y divertidas para toda la familia.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Películas -->
+<section id="peliculas" class="bg-gray-50 py-16 px-6">
+  <h2 class="text-3xl font-bold text-center mb-10">🎬 Películas</h2>
+  <div class="grid gap-8 md:grid-cols-3">
+    
+    <!-- Card Película HBO -->
+    <div class="card relative shadow-lg overflow-hidden cursor-pointer group">
+      <img src="https://picsum.photos/400/250?random=3" class="w-full h-full object-cover" alt="Película A">
+
+      <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between px-4 py-3">
+
+        <span class="font-medium flex-1 text-right">HBO Max</span>
+      </div>
+
+      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
+        <p class="text-sm">Un thriller impactante con giros inesperados en cada escena.</p>
+      </div>
+    </div>
+
+    <!-- Card Película Prime Video -->
+    <div class="card relative shadow-lg overflow-hidden cursor-pointer group">
+      <img src="https://picsum.photos/400/250?random=4" class="w-full h-full object-cover" alt="Película B">
+
+      <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between px-4 py-3">
+
+        <span class="font-medium flex-1 text-right">Prime Video</span>
+      </div>
+
+      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
+        <p class="text-sm">Una comedia ligera y entretenida para disfrutar en familia.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+ <!-- Sección Medios de Pago -->
+<section class="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 py-12">
+  <div class="max-w-5xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
+    <div class="flex flex-col md:flex-row items-center justify-between px-8 py-10">
+      
+      <!-- Texto -->
+      <div class="mb-6 md:mb-0 md:w-1/2">
+        <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">
+          Contamos con todos los medios de pago
+        </h2>
+        <div class="flex gap-4">
+            <a href="https://wa.me/51999999999" class="border-2 border-blue-900 text-blue-900 px-6 py-2 rounded-full font-semibold hover:bg-blue-900 hover:text-white transition">
+            Consultar
+          </a>
+        </div>
+      </div>
+
+      <!-- Imagenes de Tarjetas -->
+      <div class="md:w-1/2 flex justify-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Credit_card_font_awesome.svg/512px-Credit_card_font_awesome.svg.png" 
+            alt="Medios de pago"
+            class="max-h-48 object-contain">
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Contacto -->
   <section id="contacto" class="bg-gray-100 py-20 px-6 text-center">
@@ -298,6 +377,21 @@
       });
     });
   });
+  
+  document.querySelectorAll(".card").forEach(card => {
+    card.addEventListener("click", () => {
+      const overlay = card.querySelector(".overlay");
+      if (overlay.classList.contains("hidden")) {
+        document.querySelectorAll(".overlay").forEach(o => o.classList.add("hidden"));
+        overlay.classList.remove("hidden");
+        overlay.classList.add("flex");
+      } else {
+        overlay.classList.add("hidden");
+        overlay.classList.remove("flex");
+      }
+    });
+  });
+
   </script>
 </body>
 </html>
