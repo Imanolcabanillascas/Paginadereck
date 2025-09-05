@@ -77,32 +77,64 @@
   <section id="inicio" class="relative w-full">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+  
         <!-- Slide 1 -->
         <div class="swiper-slide relative">
-          <img src="https://picsum.photos/1200/400?random=4" class="w-full h-[70vh] object-cover" alt="Serie X">
-          <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
-            <h2 class="text-3xl font-bold mb-4">Serie X</h2>
-            <p class="mb-4">Costo: $9.99 | Disponible en Netflix</p>
-            <a href="https://wa.me/51999999999" target="_blank" class="bg-blue-700 px-6 py-2 rounded-lg hover:bg-blue-600">Solicitar</a>
+          <!-- Imagen de fondo -->
+          <img src="https://picsum.photos/1200/600?random=4" class="w-full h-[70vh] object-cover" alt="Serie X">
+  
+          <!-- Overlay oscuro -->
+          <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  
+          <!-- Contenido alineado a la izquierda -->
+          <div class="absolute top-1/4 left-8 max-w-lg text-white">
+            
+            <!-- SOLO el título dentro de un recuadro rosado -->
+            <h2 class="inline-block bg-pink-600 text-white px-4 py-2 text-3xl font-bold rounded-md shadow-lg mb-4">
+              El Conjuro 4: Últimos Ritos
+            </h2>
+  
+            <!-- Descripción -->
+            <p class="mb-4">
+              El Conjuro: Últimos Ritos ofrece otro emocionante capítulo del icónico universo cinematográfico, basado en hechos reales.
+            </p>
+  
+            <!-- Botón -->
+            <a href="https://wa.me/51999999999" target="_blank" 
+               class="bg-pink-600 px-6 py-2 rounded-lg font-semibold hover:bg-pink-500 transition">
+              Comprar
+            </a>
           </div>
         </div>
+  
         <!-- Slide 2 -->
         <div class="swiper-slide relative">
-          <img src="https://picsum.photos/1200/400?random=5" class="w-full h-[70vh] object-cover" alt="Película Y">
-          <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
-            <h2 class="text-3xl font-bold mb-4">Película Y</h2>
-            <p class="mb-4">Costo: $14.99 | Disponible en Disney+</p>
-            <a href="https://wa.me/51999999999" target="_blank" class="bg-blue-700 px-6 py-2 rounded-lg hover:bg-blue-600">Solicitar</a>
+          <img src="https://picsum.photos/1200/600?random=5" class="w-full h-[70vh] object-cover" alt="Película Y">
+          <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  
+          <div class="absolute top-1/4 left-8 max-w-lg text-white">
+            <h2 class="inline-block bg-pink-600 text-white px-4 py-2 text-3xl font-bold rounded-md shadow-lg mb-4">
+              Película Y
+            </h2>
+            <p class="mb-4">
+              Una emocionante historia disponible en Disney+, con acción y suspenso para toda la familia.
+            </p>
+            <a href="https://wa.me/51999999999" target="_blank" 
+               class="bg-pink-600 px-6 py-2 rounded-lg font-semibold hover:bg-pink-500 transition">
+              Comprar
+            </a>
           </div>
         </div>
+  
       </div>
-
+  
       <!-- Botones slick -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
   </section>
+  
 <!-- Sección Delivery -->
 <section class="bg-white py-10">
   <div class="max-w-3xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 border rounded-xl shadow-lg">
@@ -247,6 +279,23 @@
       </div>
     </div>
 
+
+    
+      <!-- Card Película HBO -->
+      <div class="card relative shadow-lg overflow-hidden cursor-pointer group">
+        <div class="aspect-[2/3] w-full">
+          <img src="https://picsum.photos/400/600?random=3" class="w-full h-full object-cover" alt="Película A">
+        </div>
+  
+        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between px-4 py-3">
+                  <span class="font-medium flex-1 text-right">HBO Max</span>
+        </div>
+  
+        <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
+          <p class="text-sm">Un thriller impactante con giros inesperados en cada escena.</p>
+        </div>
+      </div>
+
   </div>
 </section>
 
@@ -285,6 +334,20 @@
       </div>
     </div>
 
+    <div class="card relative shadow-lg overflow-hidden cursor-pointer group">
+      <div class="aspect-[2/3] w-full">
+        <img src="https://picsum.photos/400/600?random=2" class="w-full h-full object-cover" alt="Serie Y">
+      </div>
+
+      <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between px-4 py-3">
+        <span class="font-medium flex-1 text-right">Disney+</span>
+      </div>
+
+      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
+        <p class="text-sm">Aventuras mágicas y divertidas para toda la familia.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -316,6 +379,31 @@
             class="max-h-48 object-contain">
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Sección Horarios -->
+<section class="bg-white py-10">
+  <div class="max-w-3xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 border rounded-xl shadow-lg">
+    
+    <!-- Texto -->
+    <div class="flex-1 text-center md:text-left">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-2">
+        Atendemos las 24h del día
+      </h2>
+      <p class="text-gray-700 mb-4">Disfruta de todas los estrenos</p>
+
+    </div>
+
+    <!-- Imagen canchita -->
+    <div class="flex-shrink-0">
+      <img src="/img/clock.png" alt="Canchita" class="w-32 md:w-44">
+    </div>
+  </div>
+
+  <!-- Franja inferior -->
+  <div class="mt-6 max-w-3xl mx-auto">
+    <img src="/img/piso.png" alt="Franja decorativa" class="w-full rounded-b-xl">
   </div>
 </section>
 
