@@ -14,7 +14,7 @@
 
   <!-- Navbar -->
 <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent text-white px-6 py-4 flex justify-between items-center">
-  <h1 class="text-2xl font-bold">Mi Cine</h1>
+  <h1 class="text-2xl font-bold">DERECK</h1>
 
   <!-- Botón hamburguesa -->
   <button id="menu-btn" class="md:hidden focus:outline-none">
@@ -30,10 +30,14 @@
       class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
       Inicio
     </a>
-    <a href="#productos"
+    <a href="#series"
       class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
-      Productos
+      Series
     </a>
+    <a href="#peliculas"
+    class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
+    Peliculas
+  </a>
     <a href="#contacto"
       class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
       Contacto
@@ -51,10 +55,14 @@
         class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
         Inicio
       </a>
-      <a href="#productos"
+      <a href="#series"
         class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
-        Productos
+        Series
       </a>
+      <a href="#peliculas"
+      class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
+      Peliculas
+    </a>
       <a href="#contacto"
         class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
         Contacto
@@ -71,7 +79,7 @@
       <div class="swiper-wrapper">
         <!-- Slide 1 -->
         <div class="swiper-slide relative">
-          <img src="https://picsum.photos/1200/400?random=4" class="w-full h-96 object-cover" alt="Serie X">
+          <img src="https://picsum.photos/1200/400?random=4" class="w-full h-[70vh] object-cover" alt="Serie X">
           <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
             <h2 class="text-3xl font-bold mb-4">Serie X</h2>
             <p class="mb-4">Costo: $9.99 | Disponible en Netflix</p>
@@ -80,7 +88,7 @@
         </div>
         <!-- Slide 2 -->
         <div class="swiper-slide relative">
-          <img src="https://picsum.photos/1200/400?random=5" class="w-full h-96 object-cover" alt="Película Y">
+          <img src="https://picsum.photos/1200/400?random=5" class="w-full h-[70vh] object-cover" alt="Película Y">
           <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
             <h2 class="text-3xl font-bold mb-4">Película Y</h2>
             <p class="mb-4">Costo: $14.99 | Disponible en Disney+</p>
@@ -132,13 +140,13 @@
     <!-- Tabs -->
     <div class="flex justify-center space-x-8 border-b border-gray-200 mb-6">
       <button class="tab-button pb-2 text-gray-700 font-medium hover:text-pink-600 active border-b-2 border-pink-600" data-tab="cartelera">
-        En cartelera
+        Lo nuevo 
       </button>
       <button class="tab-button pb-2 text-gray-700 font-medium hover:text-pink-600" data-tab="estrenos">
-        Próximos estrenos
+        Lo más visto
       </button>
       <button class="tab-button pb-2 text-gray-700 font-medium hover:text-pink-600" data-tab="bts">
-        BTS Week
+        Clásicos
       </button>
     </div>
 
@@ -209,7 +217,9 @@
     
     <!-- Card Serie Netflix -->
     <div class="card relative shadow-lg overflow-hidden cursor-pointer group">
-      <img src="https://picsum.photos/400/250?random=1" class="w-full h-full object-cover" alt="Serie X">
+      <div class="aspect-[2/3] w-full">
+        <img src="https://picsum.photos/400/600?random=1" class="w-full h-full object-cover" alt="Serie X">
+      </div>
 
       <!-- Plataforma -->
       <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between px-4 py-3">
@@ -224,7 +234,9 @@
 
     <!-- Card Serie Disney+ -->
     <div class="card relative shadow-lg overflow-hidden cursor-pointer group">
-      <img src="https://picsum.photos/400/250?random=2" class="w-full h-full object-cover" alt="Serie Y">
+      <div class="aspect-[2/3] w-full">
+        <img src="https://picsum.photos/400/600?random=2" class="w-full h-full object-cover" alt="Serie Y">
+      </div>
 
       <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between px-4 py-3">
         <span class="font-medium flex-1 text-right">Disney+</span>
@@ -245,11 +257,12 @@
     
     <!-- Card Película HBO -->
     <div class="card relative shadow-lg overflow-hidden cursor-pointer group">
-      <img src="https://picsum.photos/400/250?random=3" class="w-full h-full object-cover" alt="Película A">
+      <div class="aspect-[2/3] w-full">
+        <img src="https://picsum.photos/400/600?random=3" class="w-full h-full object-cover" alt="Película A">
+      </div>
 
       <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between px-4 py-3">
-
-        <span class="font-medium flex-1 text-right">HBO Max</span>
+                <span class="font-medium flex-1 text-right">HBO Max</span>
       </div>
 
       <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
@@ -259,10 +272,11 @@
 
     <!-- Card Película Prime Video -->
     <div class="card relative shadow-lg overflow-hidden cursor-pointer group">
-      <img src="https://picsum.photos/400/250?random=4" class="w-full h-full object-cover" alt="Película B">
+      <div class="aspect-[2/3] w-full">
+        <img src="https://picsum.photos/400/600?random=4" class="w-full h-full object-cover" alt="Película B">
+      </div>
 
       <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between px-4 py-3">
-
         <span class="font-medium flex-1 text-right">Prime Video</span>
       </div>
 
@@ -273,6 +287,7 @@
 
   </div>
 </section>
+
 
 
 
@@ -391,7 +406,6 @@
       }
     });
   });
-
   </script>
 </body>
 </html>
