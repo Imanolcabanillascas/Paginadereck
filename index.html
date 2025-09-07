@@ -75,30 +75,27 @@
 
   <!-- Home con Carrusel Swiper -->
   <section id="inicio" class="relative w-full">
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper group"> <!-- 👈 añadimos group -->
       <div class="swiper-wrapper">
   
         <!-- Slide 1 -->
         <div class="swiper-slide relative">
-          <!-- Imagen de fondo -->
           <img src="https://picsum.photos/1200/600?random=4" class="w-full h-[70vh] object-cover" alt="Serie X">
-  
-          <!-- Overlay oscuro -->
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
   
-          <!-- Contenido alineado a la izquierda -->
           <div class="absolute top-1/4 left-8 max-w-lg text-white">
-            
-            <!-- SOLO el título dentro de un recuadro rosado -->
-            <h2 class="inline-block bg-pink-600 text-white px-4 py-2 text-3xl font-bold rounded-md shadow-lg mb-4">
+            <!-- Etiqueta flotante -->
+            <span class="absolute -top-6 -left-6 bg-pink-600 text-white px-3 py-1 text-sm font-semibold transform -rotate-12 shadow-lg">
+              LO NUEVO
+            </span>
+            <!-- Título -->
+            <h2 class="text-3xl font-bold mb-4">
               El Conjuro 4: Últimos Ritos
             </h2>
-  
             <!-- Descripción -->
-            <p class="mb-4">
+            <p class="mt-4 mb-4">
               El Conjuro: Últimos Ritos ofrece otro emocionante capítulo del icónico universo cinematográfico, basado en hechos reales.
             </p>
-  
             <!-- Botón -->
             <a href="https://wa.me/51999999999" target="_blank" 
                class="bg-pink-600 px-6 py-2 rounded-lg font-semibold hover:bg-pink-500 transition">
@@ -113,7 +110,7 @@
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
   
           <div class="absolute top-1/4 left-8 max-w-lg text-white">
-            <h2 class="inline-block bg-pink-600 text-white px-4 py-2 text-3xl font-bold rounded-md shadow-lg mb-4">
+            <h2 class="text-3xl font-bold mb-4">
               Película Y
             </h2>
             <p class="mb-4">
@@ -128,12 +125,19 @@
   
       </div>
   
-      <!-- Botones slick -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <!-- Flechas -->
+      <div class="swiper-button-next opacity-0 group-hover:opacity-100 transition duration-300 text-white"></div>
+      <div class="swiper-button-prev opacity-0 group-hover:opacity-100 transition duration-300 text-white"></div>
+  
+      <!-- Paginación -->
       <div class="swiper-pagination"></div>
     </div>
   </section>
+  
+  
+  <!-- Estilos personalizados -->
+  
+  
   
 <!-- Sección Delivery -->
 <section class="bg-white py-10">
@@ -244,7 +248,12 @@
 
 <!-- Series -->
 <section id="series" class="bg-white py-16 px-6">
-  <h2 class="text-3xl font-bold text-center mb-10">📺 Series</h2>
+  <section class="bg-gradient-to-b to-gray-200 py-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-300 text-left">
+      SERIES
+    </h2>
+  </section>
+  
   <div class="grid gap-8 md:grid-cols-3">
     
     <!-- Card Serie Netflix -->
@@ -291,7 +300,14 @@
 
 <!-- Películas -->
 <section id="peliculas" class="bg-gray-50 py-16 px-6">
-  <h2 class="text-3xl font-bold text-center mb-10">🎬 Películas</h2>
+  
+  <section class="bg-gradient-to-b  to-gray-200 py-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-300 text-left">
+      PELICULAS
+    </h2>
+  </section>
+  
+  
   <div class="grid gap-8 md:grid-cols-3">
     
     <!-- Card Película HBO -->
@@ -300,8 +316,6 @@
         <img src="img/pelicula5.jpeg" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Película A">
       </div>
 
-
-      
 
       <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
         <p class="text-sm">Un thriller impactante con giros inesperados en cada escena.</p>
@@ -333,38 +347,48 @@
     </div>
 
   </div>
+  
 </section>
-
-
 
 
 
 <!-- Sección Medios de Pago -->
-<section class="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 py-12">
-  <div class="max-w-5xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
-    <div class="flex flex-col md:flex-row items-center justify-between px-8 py-10">
-      
-      <!-- Texto -->
-      <div class="mb-6 md:mb-0 md:w-1/2">
-        <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">
-          Contamos con todos los medios de pago
-        </h2>
-        <div class="flex gap-4">
-            <a href="https://wa.me/51999999999" class="border-2 border-blue-900 text-blue-900 px-6 py-2 rounded-full font-semibold hover:bg-blue-900 hover:text-white transition">
-            Consultar
-          </a>
+<section class="py-12">
+  <div class="max-w-5xl mx-auto relative">
+    
+    <!-- Marco azul sobresaliente -->
+    <div class="absolute inset-0 translate-x-3 translate-y-3 bg-blue-800  z-0"></div>
+
+    <!-- Card principal -->
+    <div class="bg-white shadow-lg  overflow-hidden relative z-10 p-8 md:p-10">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        
+        <!-- Texto -->
+        <div class="mb-6 md:mb-0 md:w-1/2">
+          <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">
+            Contamos con todos los medios de pago
+          </h2>
+          <div class="flex gap-4">
+              <a href="https://wa.me/51999999999" 
+                 class="border-2 border-blue-900 text-blue-900 px-6 py-2 rounded-full font-semibold hover:bg-blue-900 hover:text-white transition">
+                Consultar
+              </a>
+          </div>
+        </div>
+
+        <!-- Imagenes de Tarjetas -->
+        <div class="md:w-1/2 flex justify-center">
+          <img src="img/cards.png" 
+              alt="Medios de pago"
+              class="max-h-48 object-contain">
         </div>
       </div>
-
-      <!-- Imagenes de Tarjetas -->
-      <div class="md:w-1/2 flex justify-center">
-        <img src="img/cards.png" 
-            alt="Medios de pago"
-            class="max-h-48 object-contain">
-      </div>
     </div>
+
   </div>
 </section>
+
+
 
 <!-- Sección Horarios -->
 <section class="bg-white py-10">
@@ -479,5 +503,25 @@
     });
   });
   </script>
+  <style>
+    /* Flechas blancas */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #fff !important;
+    }
+  
+    /* Paginación como líneas */
+    .swiper-pagination-bullet {
+      width: 30px !important;   /* largo de la línea */
+      height: 4px !important;   /* grosor */
+      border-radius: 0 !important; /* que no sean redondas */
+      background: rgba(255, 255, 255, 0.5) !important;
+      transition: background 0.3s;
+    }
+  
+    .swiper-pagination-bullet-active {
+      background: #fff !important;
+    }
+  </style>
 </body>
 </html>
