@@ -30,10 +30,6 @@
       class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
       Inicio
     </a>
-    <a href="#series"
-      class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
-      Series
-    </a>
     <a href="#peliculas"
     class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
     Peliculas
@@ -55,10 +51,6 @@
         class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
         Inicio
       </a>
-      <a href="#series"
-        class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
-        Series
-      </a>
       <a href="#peliculas"
       class="relative px-2 py-1 transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-pink-500 after:transition-all after:duration-300 hover:after:w-full">
       Peliculas
@@ -75,18 +67,18 @@
 
   <!-- Home con Carrusel Swiper -->
   <section id="inicio" class="relative w-full">
-    <div class="swiper mySwiper group"> <!-- 👈 añadimos group -->
+    <div class="swiper mySwiper group"> 
       <div class="swiper-wrapper">
   
         <!-- Slide 1 -->
         <div class="swiper-slide relative">
-          <img src="https://picsum.photos/1200/600?random=4" class="w-full h-[70vh] object-cover" alt="Serie X">
+          <img src="img/slide01.webp" class="w-full h-[70vh] object-cover" alt="Serie X">
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
   
-          <div class="absolute top-1/4 left-8 max-w-lg text-white">
+          <div class="absolute top-1/4 left-24 max-w-lg text-white">
             <!-- Etiqueta flotante -->
             <span class="absolute -top-6 -left-6 bg-pink-600 text-white px-3 py-1 text-sm font-semibold transform -rotate-12 shadow-lg">
-              LO NUEVO
+              ESTRENO
             </span>
             <!-- Título -->
             <h2 class="text-3xl font-bold mb-4">
@@ -106,15 +98,15 @@
   
         <!-- Slide 2 -->
         <div class="swiper-slide relative">
-          <img src="https://picsum.photos/1200/600?random=5" class="w-full h-[70vh] object-cover" alt="Película Y">
+          <img src="img/slide04.webp" class="w-full h-[70vh] object-cover" alt="Película Y">
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
   
-          <div class="absolute top-1/4 left-8 max-w-lg text-white">
+          <div class="absolute top-1/4 left-24 max-w-lg text-white">
             <h2 class="text-3xl font-bold mb-4">
-              Película Y
+              LA QUIMERA DEL ORO
             </h2>
             <p class="mb-4">
-              Una emocionante historia disponible en Disney+, con acción y suspenso para toda la familia.
+              Obra maestra de Chaplin, en la que interpreta a un solitario buscador de oro que llega a Alaska, a principios de siglo XX, en busca de fortuna.
             </p>
             <a href="https://wa.me/51999999999" target="_blank" 
                class="bg-pink-600 px-6 py-2 rounded-lg font-semibold hover:bg-pink-500 transition">
@@ -122,7 +114,18 @@
             </a>
           </div>
         </div>
-  
+  <!-- Slide 3 -->
+  <div class="swiper-slide relative">
+    <img src="img/slide03.webp" class="w-full h-[70vh] object-cover" alt="Película Y">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <div class="absolute top-1/2 left-24 transform -translate-y-1/4 max-w-lg text-white">
+      <a href="https://wa.me/51999999999" target="_blank" 
+        class="bg-pink-600 px-6 py-2 rounded-lg font-semibold hover:bg-pink-500 transition">
+        Comprar
+      </a>
+    </div>
+  </div>
       </div>
   
       <!-- Flechas -->
@@ -146,14 +149,14 @@
     <!-- Texto -->
     <div class="flex-1 text-center md:text-left">
       <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-2">
-        ¿Cansado de ver las mismas series?
+        ¿Que pelicula quieres ver?
       </h2>
       <p class="text-gray-700 mb-4">Disfruta de todas los estrenos</p>
 
       <!-- Botón -->
       <a href="https://tulink.com" target="_blank" 
         class="inline-flex items-center gap-2 bg-green-700 text-white px-5 py-3 rounded-full font-semibold hover:bg-green-800 transition">
-        Solicita tu combo
+        Solicita tu entrada
       </a>
     </div>
 
@@ -169,20 +172,27 @@
   </div>
 </section>
 
+
 <!-- Sección Collage de Películas tipo Pinterest con enlaces a WhatsApp -->
 <section class="bg-white py-10 px-6">
+  <section class="bg-gradient-to-b to-gray-200 py-6 px-8"> 
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-300 text-left">
+      PELICULAS
+    </h2>
+  </section>
+  
   <div class="max-w-6xl mx-auto">
 
     <!-- Tabs -->
     <div class="flex justify-center space-x-8 border-b border-gray-200 mb-6">
       <button class="tab-button pb-2 text-gray-700 font-medium hover:text-pink-600 active border-b-2 border-pink-600" data-tab="cartelera">
-        Lo nuevo 
+        En cartelera
       </button>
       <button class="tab-button pb-2 text-gray-700 font-medium hover:text-pink-600" data-tab="estrenos">
-        Lo más visto
+        Próximos estrenos
       </button>
       <button class="tab-button pb-2 text-gray-700 font-medium hover:text-pink-600" data-tab="bts">
-        Clásicos
+        BTS week
       </button>
     </div>
 
@@ -190,18 +200,33 @@
     <div id="cartelera" class="tab-content columns-2 md:columns-3 gap-4 space-y-4">
       <div class="relative break-inside-avoid">
         <a href="https://wa.me/51999999999?text=Hola!%20Estoy%20interesado%20en%20la%20película%201" target="_blank">
-          <img src="img/pelicula01.png" alt="Pelicula 1" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+          <img src="img/pelicula01.webp" alt="Pelicula 1" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
         </a>
         <span class="absolute top-4 left-0 bg-pink-600 text-white px-3 py-1 text-sm font-semibold transform -rotate-12">LO NUEVO</span>
       </div>
       <div class="relative break-inside-avoid">
         <a href="https://wa.me/51999999999?text=Hola!%20Quiero%20información%20de%20la%20película%202" target="_blank">
-          <img src="img/pelicula2.png" alt="Pelicula 2" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+          <img src="img/pelicula2.webp" alt="Pelicula 2" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
         </a>
       </div>
       <div class="relative break-inside-avoid">
         <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20la%20película%203" target="_blank">
-          <img src="img/pelicula3.jpeg" alt="Pelicula 3" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+          <img src="img/pelicula3.webp" alt="Pelicula 3" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+        </a>
+      </div>
+      <div class="relative break-inside-avoid">
+        <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20la%20película%203" target="_blank">
+          <img src="img/cartelera04.webp" alt="Pelicula 3" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+        </a>
+      </div>
+      <div class="relative break-inside-avoid">
+        <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20la%20película%203" target="_blank">
+          <img src="img/cartelera05.webp" alt="Pelicula 3" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+        </a>
+      </div>
+      <div class="relative break-inside-avoid flex items-center justify-center bg-pink-600 text-white font-bold text-lg rounded-lg shadow-md cursor-pointer hover:bg-pink-700 transition h-48">
+        <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20la%20película" target="_blank" class="block w-full h-full flex items-center justify-center">
+          VER MAS PELICULAS
         </a>
       </div>
     </div>
@@ -210,12 +235,32 @@
     <div id="estrenos" class="tab-content hidden columns-2 md:columns-3 gap-4 space-y-4">
       <div class="relative break-inside-avoid">
         <a href="https://wa.me/51999999999?text=Hola!%20Quiero%20información%20de%20la%20película%204" target="_blank">
-          <img src="img/pelicula4.jpeg" alt="Pelicula 4" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+          <img src="img/pe01.webp" alt="Pelicula 4" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
         </a>
       </div>
       <div class="relative break-inside-avoid">
         <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20la%20película%205" target="_blank">
-          <img src="img/pelicula5.jpeg" alt="Pelicula 5" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+          <img src="img/pe02.webp" alt="Pelicula 5" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+        </a>
+      </div>
+      <div class="relative break-inside-avoid">
+        <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20la%20película%205" target="_blank">
+          <img src="img/pe03.webp" alt="Pelicula 5" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+        </a>
+      </div>
+      <div class="relative break-inside-avoid">
+        <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20la%20película%205" target="_blank">
+          <img src="img/pe4.webp" alt="Pelicula 5" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+        </a>
+      </div>
+      <div class="relative break-inside-avoid">
+        <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20la%20película%205" target="_blank">
+          <img src="img/pe5.webp" alt="Pelicula 5" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+        </a>
+      </div>
+      <div class="relative break-inside-avoid flex items-center justify-center bg-pink-600 text-white font-bold text-lg rounded-lg shadow-md cursor-pointer hover:bg-pink-700 transition h-48">
+        <a href="https://wa.me/51999999999?text=Hola!%20Me%20interesa%20los%20estrenos" target="_blank" class="block w-full h-full flex items-center justify-center">
+          VER MAS ESTRENOS
         </a>
       </div>
     </div>
@@ -224,17 +269,27 @@
     <div id="bts" class="tab-content hidden columns-2 md:columns-4 gap-4 space-y-4">
       <div class="relative break-inside-avoid">
         <a href="https://wa.me/51999999999?text=Hola!%20Estoy%20interesado%20en%20BTS%201" target="_blank">
-          <img src="img/pelicula6.jpeg" alt="BTS 1" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+          <img src="img/bts1.webp" alt="BTS 1" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
         </a>
         <span class="absolute top-4 left-0 bg-pink-600 text-white px-3 py-1 text-sm font-semibold transform -rotate-12">ESTRENO</span>
       </div>
       <div class="relative break-inside-avoid">
         <a href="https://wa.me/51999999999?text=Hola!%20Quiero%20entradas%20para%20BTS%202" target="_blank">
-          <img src="img/pelicula01.png" alt="BTS 2" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+          <img src="img/bts2.webp" alt="BTS 2" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+        </a>
+      </div>
+      <div class="relative break-inside-avoid">
+        <a href="https://wa.me/51999999999?text=Hola!%20Quiero%20entradas%20para%20BTS%202" target="_blank">
+          <img src="img/bts3.webp" alt="BTS 2" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
+        </a>
+      </div>
+      <div class="relative break-inside-avoid">
+        <a href="https://wa.me/51999999999?text=Hola!%20Quiero%20entradas%20para%20BTS%202" target="_blank">
+          <img src="img/bts4.webp" alt="BTS 2" class="rounded-lg shadow-md w-full hover:opacity-90 transition">
         </a>
       </div>
       <div class="relative break-inside-avoid flex items-center justify-center bg-pink-600 text-white font-bold text-lg rounded-lg shadow-md cursor-pointer hover:bg-pink-700 transition h-48">
-        <a href="img/pelicula2.png" target="_blank" class="block w-full h-full flex items-center justify-center">
+        <a href="https://wa.me/51999999999?text=Hola!%20Quiero%20entradas%20para%20BTS%202"" target="_blank" class="block w-full h-full flex items-center justify-center">
           VER MAS
         </a>
       </div>
@@ -243,63 +298,10 @@
   </div>
 </section>
 
-<!-- Script Tabs -->
-
-
-<!-- Series -->
-<section id="series" class="bg-white py-16 px-6">
-  <section class="bg-gradient-to-b to-gray-200 py-6">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-300 text-left">
-      SERIES
-    </h2>
-  </section>
-  
-  <div class="grid gap-8 md:grid-cols-3">
-    
-    <!-- Card Serie Netflix -->
-    <div class="card relative rounded-xl shadow-2xl overflow-hidden cursor-pointer group hover:scale-105 transition-transform duration-300">
-      <div class="aspect-[2/3] w-full">
-        <img src="img/pelicula2.png" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Serie X">
-      </div>
-
-
-      <!-- Resumen -->
-      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
-        <p class="text-sm">Una serie llena de acción y misterio que no podrás dejar de ver.</p>
-      </div>
-    </div>
-
-    <!-- Card Serie Disney+ -->
-    <div class="card relative rounded-xl shadow-2xl overflow-hidden cursor-pointer group hover:scale-105 transition-transform duration-300">
-      <div class="aspect-[2/3] w-full">
-        <img src="img/pelicula3.jpeg" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Serie Y">
-      </div>
-
-
-
-      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
-        <p class="text-sm">Aventuras mágicas y divertidas para toda la familia.</p>
-      </div>
-    </div>
-
-    <!-- Card Serie HBO -->
-    <div class="card relative rounded-xl shadow-2xl overflow-hidden cursor-pointer group hover:scale-105 transition-transform duration-300">
-      <div class="aspect-[2/3] w-full">
-        <img src="img/pelicula4.jpeg" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Película A">
-      </div>
-    
-
-      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
-        <p class="text-sm">Un thriller impactante con giros inesperados en cada escena.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 
 <!-- Películas -->
-<section id="peliculas" class="bg-gray-50 py-16 px-6">
+<!-- <section id="peliculas" class="bg-gray-50 py-16 px-6">
   
   <section class="bg-gradient-to-b  to-gray-200 py-6">
     <h2 class="text-4xl md:text-5xl font-extrabold text-gray-300 text-left">
@@ -310,10 +312,10 @@
   
   <div class="grid gap-8 md:grid-cols-3">
     
-    <!-- Card Película HBO -->
+
     <div class="card relative rounded-xl shadow-2xl overflow-hidden cursor-pointer group hover:scale-105 transition-transform duration-300">
       <div class="aspect-[2/3] w-full">
-        <img src="img/pelicula5.jpeg" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Película A">
+        <img src="img/pelicula01.webp" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Película A">
       </div>
 
 
@@ -322,10 +324,10 @@
       </div>
     </div>
 
-    <!-- Card Película Prime Video -->
+  
     <div class="card relative rounded-xl shadow-2xl overflow-hidden cursor-pointer group hover:scale-105 transition-transform duration-300">
       <div class="aspect-[2/3] w-full">
-        <img src="img/pelicula3.jpeg" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Película B">
+        <img src="img/pelicula2.webp" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Película B">
       </div>
 
 
@@ -334,10 +336,30 @@
       </div>
     </div>
 
-    <!-- Card Película Disney+ -->
+    
     <div class="card relative rounded-xl shadow-2xl overflow-hidden cursor-pointer group hover:scale-105 transition-transform duration-300">
       <div class="aspect-[2/3] w-full">
-        <img src="img/pelicula6.jpeg" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Serie Y">
+        <img src="img/pelicula3.webp" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Serie Y">
+      </div>
+
+
+      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
+        <p class="text-sm">Aventuras mágicas y divertidas para toda la familia.</p>
+      </div>
+    </div>
+    <div class="card relative rounded-xl shadow-2xl overflow-hidden cursor-pointer group hover:scale-105 transition-transform duration-300">
+      <div class="aspect-[2/3] w-full">
+        <img src="img/pelicula4.webp" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Serie Y">
+      </div>
+
+
+      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
+        <p class="text-sm">Aventuras mágicas y divertidas para toda la familia.</p>
+      </div>
+    </div>
+    <div class="card relative rounded-xl shadow-2xl overflow-hidden cursor-pointer group hover:scale-105 transition-transform duration-300">
+      <div class="aspect-[2/3] w-full">
+        <img src="img/pelicula5.webp" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Serie Y">
       </div>
 
 
@@ -346,9 +368,19 @@
       </div>
     </div>
 
+    <div class="card relative rounded-xl shadow-2xl overflow-hidden cursor-pointer group hover:scale-105 transition-transform duration-300">
+      <div class="aspect-[2/3] w-full">
+        <img src="img/pelicula6.webp" class="w-full h-full object-cover border-4 border-gray-200 rounded-xl shadow-lg" alt="Serie Y">
+      </div>
+
+
+      <div class="overlay absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-center text-white px-4 opacity-0 group-hover:opacity-100 hidden md:flex transition duration-500">
+        <p class="text-sm">Aventuras mágicas y divertidas para toda la familia.</p>
+      </div>
+    </div>
   </div>
   
-</section>
+</section> -->
 
 
 
@@ -370,7 +402,7 @@
           </h2>
           <div class="flex gap-4">
               <a href="https://wa.me/51999999999" 
-                 class="border-2 border-blue-900 text-blue-900 px-6 py-2 rounded-full font-semibold hover:bg-blue-900 hover:text-white transition">
+                class="border-2 border-blue-900 text-blue-900 px-6 py-2 rounded-full font-semibold hover:bg-blue-900 hover:text-white transition">
                 Consultar
               </a>
           </div>
